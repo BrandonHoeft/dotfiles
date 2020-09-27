@@ -17,8 +17,7 @@ eval "$(pyenv init -)"
 # edit terminal appearance https://stackoverflow.com/questions/1550288/os-x-terminal-colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-
+export PS1="\[\033[1;30m[\!] \]\[\033[0;36m\]\u\[\033[0;m\]@\[\033[0;32m\]\h\[\033[0;m\]: \[\033[0;35m\]\w\[\033[0;m\]\$ "
 
 # update existing env variables
 export HISTCONTROL=ignoredups # cause shell history command to ignore repeats
