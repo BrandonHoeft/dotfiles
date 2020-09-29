@@ -25,5 +25,5 @@ export HISTSIZE=1000 # from 500 default lines stored by history command
 
 
 # my helpful aliases
-alias lsdot='ls -d .[!.]*' # all dotfiles (start w/ 1 dot) in current directory
+alias lsdot='ls -ld .[!.]*' # all dotfiles (start w/ 1 dot) in current directory
 alias lslong='ls -lh' # list dir long format with human readable print
