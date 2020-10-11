@@ -17,7 +17,7 @@ eval "$(pyenv init -)"
 # edit terminal appearance: CLI colors, prompt string
 export CLICOLOR=1 # turn colors on 
 export LSCOLORS=GxFxCxDxBxegedabagaced # customize CLI colors
-export PS1="\[\033[1;30m[\!] \]\[\033[0;36m\]\u\[\033[0;m\]@\[\033[0;32m\]\h\[\033[0;m\]: \[\033[0;35m\]\w\[\033[0;m\]\$ "
+export PS1="\[\033[0;37m[\!] \]\[\033[0;36m\]\u\[\033[0;m\]@\[\033[0;32m\]\h\[\033[0;m\]: \[\033[0;35m\]\w\[\033[0;m\]\$ "
 
 
 # update existing env variables
