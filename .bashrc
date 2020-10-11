@@ -7,11 +7,12 @@
 umask 0002
 
 
-# pyenv to manage my python envs the right way on mac OS 
-#    (https://opensource.com/article/19/5/python-3-default-mac)
-#    By adding this, every new terminal session will init pyenv 
-#    and add the location of python version I want, to my PATH 
+# Load pyenv automatically to easily manage python versions and venvs
+# https://github.com/pyenv/pyenv#how-it-works
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH" # put at beginning of Path
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 
 # edit terminal appearance: CLI colors, prompt string
