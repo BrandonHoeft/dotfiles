@@ -23,11 +23,12 @@ export PS1="\[\033[0;37m[\!] \]\[\033[0;36m\]\u\[\033[0;m\]@\[\033[0;32m\]\h\[\0
 
 # update existing env variables
 export HISTCONTROL=ignoredups # cause shell history command to ignore repeats
-export HISTSIZE=10000 # from 500 default lines stored by history command
+export HISTSIZE=100000 # from 500 default lines stored by history command
 
 
 # my helpful aliases
 alias lsdot='ls -ld .[!.]*' # all dotfiles (start w/ 1 dot) in current directory
 alias lslong='ls -lh' # list dir long format with human-readable file size
 alias defaultsh='echo $SHELL' # default env shell
-alias currentsh='ps -p $$' # process row of current shell instance  
+alias currentsh='ps -p $$' # process row of current shell instance
+alias histfilter='history | grep'  
