@@ -1,0 +1,4 @@
+#.bash_funcs
+
+# search man bash for builtin command description passed as regex pattern
+bashman () { man bash | less -p "^       $1 "; }  
