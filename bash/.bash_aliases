@@ -8,7 +8,7 @@ alias defaultsh='echo $SHELL'  # default env shell
 alias currentsh='ps -p $$'  # process row of current shell instance
 alias histsearch='history | grep'
 alias deldir='rm -rf'  # del non-empty directory recursively
-
+alias portsinuse='lsof -i -P -n | grep LISTEN' # ports actively listening to traffic
 
 # AWS CLI https://docs.aws.amazon.com/cli/latest/reference/
 alias aws_ec2_desc='aws ec2 describe-instances' # describe my ec2 instances in my default region
