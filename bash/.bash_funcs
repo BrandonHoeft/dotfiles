@@ -4,15 +4,16 @@
 bashman () { man bash | less -p "^       $1 "; }  
 
 # run postgres with 3 CLI params for username, pw, dbname
-#    port mapping [5000 local]:[5432 container port], detached mode
+#    port mapping [5000 local]:[5432 container port], detached mode, volume mapping to ~/docker/pgdata
 dr-run-pg () {
     container_name="some-postgres-"
     container_name+="$RANDOM" 
-    docker run --name $container_name \
+    docker run -d \
+        --name $container_name \
         -e POSTGRES_USER=$1 \
         -e POSTGRES_PASSWORD=$2 \
         -e POSTGRES_DB=$3 \
         -p 5000:5432 \
-        -d \
+        -v /Users/bhoeft/docker_volumes/pgdata:/var/lib/postgresql/data \
         postgres
 }
