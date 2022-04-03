@@ -9,6 +9,7 @@ alias currentsh='ps -p $$'  # process row of current shell instance
 alias histsearch='history | grep'
 alias deldir='rm -rf'  # del non-empty directory recursively
 alias portsinuse='lsof -i -P -n | grep LISTEN' # ports actively listening to traffic
+alias func_print='declare -f' # add name of bash function to end to print its definition
 
 # AWS CLI https://docs.aws.amazon.com/cli/latest/reference/
 alias aws_ec2_desc='aws ec2 describe-instances' # describe my ec2 instances in my default region
