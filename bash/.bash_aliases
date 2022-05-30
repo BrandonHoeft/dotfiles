@@ -16,7 +16,7 @@ alias aws_ec2_desc='aws ec2 describe-instances' # describe my ec2 instances in m
 alias aws_ec2_ids="aws ec2 describe-instances --instance-id | grep -iE 'InstanceId|Key:|Value'"  # get all instance ids in my default region and tagged metadata
 alias aws_ec2_start='aws ec2 start-instances --instance-ids'  # start a single EC2 instance
 alias aws_ec2_stop='aws ec2 stop-instances --instance-ids'  # stop a single EC2 instance
-
+alias aws_acct_id='aws sts get-caller-identity'  # get root user account id
 
 # docker commands
 alias docker_ctnr='docker ps -a'  # all running and stopped containers
