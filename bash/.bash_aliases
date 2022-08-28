@@ -1,5 +1,8 @@
 # location to store aliases, my shortcut commands. loaded by .bashrc
 
+# program aliases
+alias python=python3.8
+
 # shell aliases
 alias exitstat='echo $?'  # get exit status of last command
 alias lsdot='ls -ld .[!.]*'  # all dotfiles (start w/ 1 dot) in current directory
