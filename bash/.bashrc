@@ -8,15 +8,6 @@ for f in ~/dotfiles/bash/{.bash_aliases,.bash_funcs}; do . $f; done
 # change OSX default u,g,o permissions to make directory sharing easier
 umask 0002
 
-
-# Load pyenv automatically to easily manage python versions and venvs
-# https://github.com/pyenv/pyenv#how-it-works
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH" # put at beginning of Path
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-
 # edit terminal appearance: CLI colors, prompt string
 export CLICOLOR=1 # turn colors on 
 export LSCOLORS=GxFxCxDxBxegedabagaced # customize CLI colors
