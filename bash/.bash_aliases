@@ -4,6 +4,7 @@
 alias python=python3.8
 
 # shell aliases
+alias disk_used='du -s -h *'  # summary of directory (and its sub-contents) space usage
 alias exitstat='echo $?'  # get exit status of last command
 alias lsdot='ls -ld .[!.]*'  # all dotfiles (start w/ 1 dot) in current directory
 alias lslong='ls -lh'  # list dir long format with human-readable file size
