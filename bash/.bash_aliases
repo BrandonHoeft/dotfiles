@@ -28,3 +28,4 @@ alias dkr_kill='killall Docker' # kill the docker daemon
 alias dkr_list_ctnr='docker ps -a'  # all running and stopped containers
 alias dkr_ctnr_ids='docker ps -aq'  # just the id as a list. useful for command substitution with docker rm
 alias dkr_img_ids='docker images -q' # just the id of docker images as a list.
+alias dkr_i='docker inspect' # get low level info about a container (e.g. its IP address)
