@@ -1,5 +1,8 @@
 #.bash_funcs
 
+# get the long-format file list of the target program nested in which command expansion
+ls_which () { ls -l $(which $1); }
+
 # search man bash for builtin command description passed as regex pattern
 bashman () { man bash | less -p "^       $1 "; }  
 
