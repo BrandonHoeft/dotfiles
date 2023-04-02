@@ -12,5 +12,5 @@ fi
 # user specific environment and startup program locations
 #    add :/Users/bhoeft/bin or the User's home directory to end of PATH list to search when shell executes a program. 
 #    This is where my personal programs/commands/aliases may reside
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:$HOME/terraform
 export PATH
