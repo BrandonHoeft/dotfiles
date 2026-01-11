@@ -14,3 +14,5 @@ fi
 #    This is where my personal programs/commands/aliases may reside
 PATH=$PATH:$HOME/bin
 export PATH
+
+eval "$(/opt/homebrew/bin/brew shellenv bash)"
