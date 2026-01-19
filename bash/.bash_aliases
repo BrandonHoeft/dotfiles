@@ -16,11 +16,12 @@ alias portsinuse='lsof -i -P -n | grep LISTEN' # ports actively listening to tra
 alias func_print='declare -f' # add name of bash function to end to print its definition
 
 # AWS CLI https://docs.aws.amazon.com/cli/latest/reference/
+alias awsprofile='aws configure list' # see my current aws cli configuration
+alias awswhoami='aws sts get-caller-identity' # see who i am acting as on local aws cli user
 alias aws_ec2_desc='aws ec2 describe-instances' # describe my ec2 instances in my default region
 alias aws_ec2_ids="aws ec2 describe-instances --instance-id | grep -iE 'InstanceId|Key:|Value'"  # get all instance ids in my default region and tagged metadata
 alias aws_ec2_start='aws ec2 start-instances --instance-ids'  # start a single EC2 instance
 alias aws_ec2_stop='aws ec2 stop-instances --instance-ids'  # stop a single EC2 instance
-alias aws_acct_id='aws sts get-caller-identity'  # get root user account id
 
 # docker commands
 alias dkr_open='open -a Docker.app' # run docker daemon
